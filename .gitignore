@@ -1,0 +1,27 @@
+# Git ignore for Kén Startup root repository
+
+# Backend
+backend/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+backend/ken_db.sqlite
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/tsconfig.tsbuildinfo
+frontend/.env.local
+frontend/.env*.local
+frontend/__v0_runtime_loader.js
+frontend/__v0_devtools.tsx
+frontend/__v0_jsx-dev-runtime.ts
+frontend/.snowflake/
+frontend/.v0-trash/
+frontend/.vercel/
+frontend/.git_backup/
+
+# OS files
+.DS_Store
+Thumbs.db
