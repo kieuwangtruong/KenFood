@@ -470,16 +470,17 @@
 
                 <div class="project-entry">
                     <div class="project-header">
-                        <span class="project-title">SmartSale | Phân tích Kinh doanh & E-commerce Business Intelligence</span>
+                        <span class="project-title">Smart Store | Hệ thống Quản lý Bán hàng & Kho hàng</span>
                         <a class="project-link" href="https://smartsale.io.vn/" target="_blank">Live App: smartsale.io.vn 🔗</a>
                     </div>
-                    <div class="project-desc">Nền tảng thương mại điện tử thực tế phân tích xu hướng bán hàng, doanh thu và vận hành kho bãi</div>
-                    <div class="project-tech">Công nghệ & Công cụ: Python, Pandas, Power BI, Excel, Mô hình Safety Stock & ROP</div>
+                    <div class="project-desc">Hệ thống thương mại điện tử kiến trúc Microservices gồm các phân hệ quản lý kho, bán hàng và đơn hàng</div>
+                    <div class="project-tech">Công nghệ & Công cụ: Vue 3, TypeScript, Vite, PrimeVue, Pinia, Axios, Docker, Render, REST API</div>
                     <ul class="project-bullets">
-                        <li>Triển khai nền tảng thương mại thực tế (https://smartsale.io.vn/) và xây dựng mô hình dữ liệu tính toán các chỉ số kinh doanh cốt lõi bao gồm Giá trị trọn đời khách hàng (LTV), Giá trị trung bình đơn hàng (AOV) và tốc độ tăng trưởng doanh thu.</li>
-                        <li>Phân tích xu hướng chuỗi cung ứng thông qua mô hình Safety Stock và Điểm đặt hàng lại (ROP), giúp tối ưu hóa chu kỳ nhập kho và giảm 18% tỷ lệ hết hàng ngoài ý muốn.</li>
-                        <li><strong>[Data Insight]</strong> Tiến hành phân tích phân nhóm RFM (Recency, Frequency, Monetary); phát hiện nhóm 15% khách hàng VIP đóng góp tới 45% tổng doanh thu, từ đó đề xuất chiến dịch khuyến mãi mục tiêu giúp doanh số tăng 8.5% hàng tháng.</li>
-                        <li>Thiết kế bảng điều khiển Power BI trực quan để theo dõi xu hướng mua sắm, đồng thời tự động hóa luồng Import/Export Excel với các ràng buộc xác thực dữ liệu chặt chẽ nhằm triệt tiêu log hoạt động lỗi.</li>
+                        <li>Đảm nhiệm vai trò Trưởng nhóm phát triển Frontend chỉ đạo 4 lập trình viên xây dựng giao diện Single-Page (SPA) sử dụng Vue 3, Vite và PrimeVue với Pinia làm quản lý trạng thái tập trung.</li>
+                        <li>Kết nối giao diện khách hàng với API Gateway hệ thống, phân quyền vai trò người dùng (RBAC) bằng token và tối ưu luồng Silent Refresh Token chạy ẩn.</li>
+                        <li>Phát triển phân hệ quản trị hồ sơ Khách hàng và đối tác Nhà cung cấp, cho phép theo dõi động các chỉ số doanh thu cá nhân (TotalSpent) và số dư công nợ (CurrentDebt).</li>
+                        <li>Tích hợp cổng giao dịch không tiền mặt thông qua QR Code động PayOS và triển khai luồng webhook kiểm tra phản hồi ngân hàng tự động cập nhật trạng thái đơn.</li>
+                        <li><strong>[Data Insight]</strong> Phân tích dữ liệu nhật ký giao dịch và phát hiện nhóm 15% khách hàng VIP đóng góp tới 45% tổng doanh thu; thiết kế các banner chương trình khuyến mãi hiển thị mục tiêu trên giao diện giúp tăng Giá trị đơn hàng trung bình (AOV) lên 8.5%.</li>
                     </ul>
                 </div>
 
@@ -507,7 +508,7 @@
                     <div class="project-tech">Công nghệ & Công cụ: PostgreSQL, Python, Pandas, NumPy, Docker, Connection Pooling</div>
                     <ul class="project-bullets">
                         <li>Xây dựng hệ thống tiếp nhận và xử lý hơn 10 triệu bản ghi telemetry và log sự kiện hoạt động mỗi ngày dựa trên kiến trúc hướng sự kiện (event-driven), duy trì thời gian hoạt động ổn định của hệ thống đạt 99.97%.</li>
-                        <li>Tối ưu hóa 45% độ trễ truy vấn đọc-ghi đối với dữ liệu log tần suất cao trên PostgreSQL thông qua phân vùng bảng (table partitioning), lập chỉ ứng hỗn hợp (composite indexing) và tối ưu hóa câu lệnh truy vấn.</li>
+                        <li>Tối ưu hóa 45% độ trễ truy vấn đọc-ghi đối với dữ liệu log tần suất cao trên PostgreSQL thông qua phân vùng bảng (table partitioning), lập chỉ mục hỗn hợp (composite indexing) và tối ưu hóa câu lệnh truy vấn.</li>
                         <li><strong>[Data Insight]</strong> Đánh giá log truy cập phát hiện 70% tải máy chủ API tập trung vào các đợt cao điểm 15 phút giữa các ca học; đề xuất giải pháp cấp phát kết nối (connection pooling) tự động giúp giải quyết triệt để tình trạng nghẽn hàng đợi kết nối.</li>
                         <li>Mô hình hóa chỉ số hoạt động đồng thời (CCU) và biểu đồ giữ chân (retention curve) của hơn 15,000 người dùng hoạt động đồng thời để đưa ra các đề xuất nâng cấp tài nguyên hệ thống dựa trên số liệu thực tế.</li>
                     </ul>
