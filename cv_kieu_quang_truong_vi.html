@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kiều Quang Trường - Game Data Analyst Intern</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #0f5d3e;
+            --primary-light: #e8f5e9;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --background: #ffffff;
+            --sidebar-bg: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #cbd5e1;
+            color: var(--text-dark);
+            line-height: 1.4;
+            font-size: 12px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            margin: 20px auto;
+            background: var(--background);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 32%;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 68%;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Headers & Typography */
+        .profile-container {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 12px;
+            margin-bottom: 4px;
+        }
+
+        .candidate-name {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .target-role {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1.5px solid var(--primary);
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Contact Details */
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 11px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        .contact-value, .contact-value a {
+            color: var(--text-dark);
+            text-decoration: none;
+            word-break: break-all;
+            font-weight: 500;
+        }
+
+        .contact-value a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Skill Tags */
+        .skills-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .skill-category-title {
+            font-weight: 600;
+            font-size: 11px;
+            color: var(--text-dark);
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(15, 93, 62, 0.15);
+        }
+
+        /* Soft Skills & Languages */
+        .list-bullet {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .list-bullet li {
+            position: relative;
+            padding-left: 12px;
+            font-size: 11px;
+        }
+
+        .list-bullet li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Project Entry */
+        .project-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .project-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .project-title {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .project-link {
+            font-size: 10.5px;
+            font-weight: 500;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .project-desc {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .project-bullets {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .project-bullets li {
+            position: relative;
+            padding-left: 12px;
+            font-size: 11px;
+            color: var(--text-dark);
+            text-align: justify;
+        }
+
+        .project-bullets li::before {
+            content: "▪";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 8px;
+        }
+
+        /* Education & Certs Styling */
+        .edu-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: 8px;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 11.5px;
+        }
+
+        .edu-degree {
+            font-weight: 500;
+            color: var(--text-muted);
+            font-size: 11px;
+        }
+
+        /* Print Media Query */
+        @media print {
+            body {
+                background: none;
+            }
+            .a4-page {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-page">
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <!-- CONTACTS -->
+            <div>
+                <div class="section-title">Liên hệ</div>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value"><a href="mailto:kieuquangtruong.da@gmail.com">kieuquangtruong.da@gmail.com</a></span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-label">Điện thoại</span>
+                        <span class="contact-value">+84 (0) 987 654 321</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-label">Địa chỉ</span>
+                        <span class="contact-value">Hà Nội, Việt Nam</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value"><a href="https://github.com/kieuwangtruong" target="_blank">github.com/kieuwangtruong</a></span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="contact-label">Portfolio</span>
+                        <span class="contact-value"><a href="https://smartsale.io.vn/" target="_blank">smartsale.io.vn</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- EDUCATION -->
+            <div>
+                <div class="section-title">Học vấn</div>
+                <div class="edu-entry">
+                    <div class="edu-header">
+                        <span>Đại học Đại Nam</span>
+                        <span style="font-weight: 500; font-size: 10px;">Hà Nội, VN</span>
+                    </div>
+                    <div class="edu-degree">Cử nhân Công nghệ Thông tin</div>
+                    <div style="font-size: 10.5px; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
+                        GPA: 3.2 / 4.0 | Tốt nghiệp: 12/2027
+                    </div>
+                </div>
+            </div>
+
+            <!-- HARD SKILLS -->
+            <div>
+                <div class="section-title">Kỹ năng cứng</div>
+                <div class="skills-group">
+                    <div class="skill-category-title">Database & Querying:</div>
+                    <div class="skills-container">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Row-Level Locking</span>
+                        <span class="skill-tag">Table Partitioning</span>
+                    </div>
+                </div>
+                <div class="skills-group" style="margin-top: 10px;">
+                    <div class="skill-category-title">Analytics & Tools:</div>
+                    <div class="skills-container">
+                        <span class="skill-tag">Python (Pandas/NumPy)</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel Analytics</span>
+                        <span class="skill-tag">Telemetry Logs</span>
+                        <span class="skill-tag">LTV/AOV Metrics</span>
+                    </div>
+                </div>
+                <div class="skills-group" style="margin-top: 10px;">
+                    <div class="skill-category-title">DevOps & Systems:</div>
+                    <div class="skills-container">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git Version Control</span>
+                        <span class="skill-tag">ACID Principles</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOFT SKILLS -->
+            <div>
+                <div class="section-title">Kỹ năng mềm</div>
+                <ul class="list-bullet">
+                    <li>Tư duy Phân tích & Phản biện</li>
+                    <li>Giải quyết công việc độc lập</li>
+                    <li>Tự học và nghiên cứu nhanh</li>
+                    <li>Làm việc nhóm hiệu quả</li>
+                </ul>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div>
+                <div class="section-title">Ngoại ngữ</div>
+                <ul class="list-bullet">
+                    <li><strong>Tiếng Việt</strong> (Bản xứ)</li>
+                    <li><strong>Tiếng Anh</strong> (TOEIC 650)</li>
+                    <li style="list-style: none; font-size: 10px; color: var(--text-muted); padding-left: 12px; margin-top: -2px;">
+                        Đọc hiểu tài liệu kỹ thuật & DB nước ngoài tốt.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT MAIN CONTENT -->
+        <div class="main-content">
+            <!-- HEADER -->
+            <div class="profile-container">
+                <h1 class="candidate-name">Kiều Quang Trường</h1>
+                <div class="target-role">Game Data Analyst Intern</div>
+            </div>
+
+            <!-- CAREER OBJECTIVE -->
+            <div>
+                <div class="section-title">Mục tiêu nghề nghiệp</div>
+                <p style="text-align: justify; font-size: 11.5px; color: var(--text-dark); text-indent: 15px;">
+                    Sinh viên ngành Công nghệ thông tin năm 3 với nền tảng kỹ thuật vững vàng và kinh nghiệm xây dựng các hệ thống xử lý giao dịch đồng thời và đường ống telemetry logs. Mong muốn ứng tuyển vị trí Thực tập sinh Phân tích dữ liệu Game (Game Data Analyst Intern) tại các studio game di động hàng đầu. Định hướng sử dụng tư duy phân tích hệ thống, kỹ năng truy vấn SQL tối ưu và lập trình Python để khai thác tệp dữ liệu hành vi người chơi, sự kiện in-game và nhật ký giao dịch ảo; từ đó đề xuất các giải pháp nâng cao tỷ lệ giữ chân người chơi (retention), tối ưu hóa cân bằng kinh tế game (game economy) và cải thiện hiệu suất doanh thu.
+                </p>
+            </div>
+
+            <!-- PROJECTS -->
+            <div>
+                <div class="section-title">Dự án hệ thống & phân tích</div>
+                
+                <div class="project-entry">
+                    <div class="project-header">
+                        <span class="project-title">SmartSale | Phân tích Kinh tế Game & Business Intelligence</span>
+                        <a class="project-link" href="https://smartsale.io.vn/" target="_blank">Live App: smartsale.io.vn 🔗</a>
+                    </div>
+                    <div class="project-desc">Môi trường giả lập giao dịch vật phẩm tối ưu hóa chu kỳ luân chuyển tài nguyên ảo</div>
+                    <ul class="project-bullets">
+                        <li>Thiết lập hệ thống giả lập thương mại thực tế và xây dựng mô hình dữ liệu tính toán các chỉ số kinh doanh cốt lõi của game bao gồm Giá trị trọn đời khách hàng (LTV), Giá trị trung bình đơn hàng (AOV), và dòng tiền để mô phỏng cân bằng kinh tế ảo.</li>
+                        <li>Phân tích xu hướng chuỗi cung ứng thông qua mô hình Safety Stock và Điểm đặt hàng lại (ROP), giúp tối ưu hóa chu kỳ nhập kho hàng hóa ảo và giảm 18% tỷ lệ hết hàng ngoài ý muốn.</li>
+                        <li>Thiết kế bảng điều khiển Power BI trực quan để theo dõi xu hướng mua sắm, đồng thời tự động hóa luồng Import/Export Excel với các ràng buộc xác thực dữ liệu chặt chẽ nhằm triệt tiêu log hoạt động lỗi.</li>
+                    </ul>
+                </div>
+
+                <div class="project-entry" style="margin-top: 12px;">
+                    <div class="project-header">
+                        <span class="project-title">KenFood Platform | Sổ cái giao dịch & Xử lý đồng thời cao</span>
+                        <a class="project-link" href="https://github.com/kieuwangtruong/KenFood" target="_blank">GitHub: KenFood 🔗</a>
+                    </div>
+                    <div class="project-desc">Hệ thống backend lưu trữ giao dịch mô phỏng cơ chế nạp vi mô (IAP) trong game di động</div>
+                    <ul class="project-bullets">
+                        <li>Thiết kế kiến trúc cơ sở dữ liệu giao dịch sử dụng cơ chế Khóa dòng (Row-Level Locking) trong PostgreSQL, đảm bảo tuân thủ 100% chuẩn ACID và ngăn ngừa hoàn toàn lỗi tranh chấp dữ liệu (race conditions) vào khung giờ cao điểm.</li>
+                        <li>Phát triển luồng dữ liệu tự động xử lý hàng loạt theo thời gian chốt sổ cố định (Cutoff 10:01 AM), giúp giảm 40% độ trễ xử lý các giao dịch quy mô lớn.</li>
+                        <li>Lập trình các kịch bản kiểm toán giao dịch tự động trực tiếp tại tầng cơ sở dữ liệu, phát hiện sớm các giao dịch bất thường với độ chính xác đạt 98.6%.</li>
+                    </ul>
+                </div>
+
+                <div class="project-entry" style="margin-top: 12px;">
+                    <div class="project-header">
+                        <span class="project-title">Smart Campus | Phân tích Telemetry & Nhật ký hành vi mô phỏng</span>
+                        <span class="project-link" style="color: var(--text-muted); cursor: default;">Dự án dữ liệu lớn</span>
+                    </div>
+                    <div class="project-desc">Nền tảng thu thập và phân tích log hoạt động mô tả thói quen đăng nhập và tương tác</div>
+                    <ul class="project-bullets">
+                        <li>Xây dựng hệ thống tiếp nhận và xử lý hơn 10 triệu bản ghi telemetry và log sự kiện hoạt động mỗi ngày dựa trên kiến trúc hướng sự kiện (event-driven), duy trì thời gian hoạt động ổn định của hệ thống đạt 99.97%.</li>
+                        <li>Tối ưu hóa 45% độ trễ truy vấn đọc-ghi đối với dữ liệu log tần suất cao trên PostgreSQL thông qua phân vùng bảng (table partitioning), lập chỉ mục hỗn hợp (composite indexing) và tối ưu hóa câu lệnh truy vấn.</li>
+                        <li>Mô hình hóa chỉ số hoạt động đồng thời (CCU) và biểu đồ giữ chân (retention curve) của hơn 15,000 người dùng ảo hoạt động đồng thời để đưa ra các đề xuất nâng cấp tài nguyên hệ thống dựa trên số liệu thực tế.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
