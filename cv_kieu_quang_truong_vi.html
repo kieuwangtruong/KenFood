@@ -195,7 +195,7 @@
             display: flex;
             flex-direction: column;
             gap: 3px;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .project-header {
@@ -226,6 +226,15 @@
             color: var(--text-muted);
             font-size: 10.5px;
             margin-bottom: 1px;
+        }
+
+        .project-tech {
+            font-size: 10px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
         }
 
         .project-bullets {
@@ -465,6 +474,7 @@
                         <a class="project-link" href="https://smartsale.io.vn/" target="_blank">Live App: smartsale.io.vn 🔗</a>
                     </div>
                     <div class="project-desc">Nền tảng thương mại điện tử thực tế phân tích xu hướng bán hàng, doanh thu và vận hành kho bãi</div>
+                    <div class="project-tech">Công nghệ & Công cụ: Python, Pandas, Power BI, Excel, Mô hình Safety Stock & ROP</div>
                     <ul class="project-bullets">
                         <li>Triển khai nền tảng thương mại thực tế (https://smartsale.io.vn/) và xây dựng mô hình dữ liệu tính toán các chỉ số kinh doanh cốt lõi bao gồm Giá trị trọn đời khách hàng (LTV), Giá trị trung bình đơn hàng (AOV) và tốc độ tăng trưởng doanh thu.</li>
                         <li>Phân tích xu hướng chuỗi cung ứng thông qua mô hình Safety Stock và Điểm đặt hàng lại (ROP), giúp tối ưu hóa chu kỳ nhập kho và giảm 18% tỷ lệ hết hàng ngoài ý muốn.</li>
@@ -475,10 +485,11 @@
 
                 <div class="project-entry" style="margin-top: 10px;">
                     <div class="project-header">
-                        <span class="project-title">KenFood Platform | Sổ cái giao dịch & Hệ thống Xử lý Đồng thời</span>
+                        <span class="project-title">KenFood Platform | Sổ cái giao dịch & Xử lý đồng thời cao</span>
                         <a class="project-link" href="https://github.com/kieuwangtruong/KenFood" target="_blank">GitHub: KenFood 🔗</a>
                     </div>
                     <div class="project-desc">Hệ thống backend của chợ ứng dụng giao đồ ăn tích hợp ví điện tử thanh toán chặng cuối</div>
+                    <div class="project-tech">Công nghệ & Công cụ: Python, FastAPI, PostgreSQL, SQLAlchemy, PayOS SDK, Git, Pytest</div>
                     <ul class="project-bullets">
                         <li>Thiết kế kiến trúc cơ sở dữ liệu giao dịch sử dụng cơ chế Khóa dòng (Row-Level Locking) trong PostgreSQL, đảm bảo tuân thủ 100% chuẩn ACID và ngăn ngừa hoàn toàn lỗi tranh chấp dữ liệu (race conditions) vào khung giờ cao điểm.</li>
                         <li>Phát triển luồng dữ liệu tự động xử lý hàng loạt theo thời gian chốt sổ cố định (Cutoff 10:01 AM), giúp giảm 40% độ trễ xử lý các giao dịch thanh toán quy mô lớn.</li>
@@ -493,9 +504,10 @@
                         <span class="project-link" style="color: var(--text-muted); cursor: default;">Dự án dữ liệu lớn</span>
                     </div>
                     <div class="project-desc">Hệ thống tiếp nhận telemetry và giám sát thiết bị thông minh cùng log hoạt động sinh viên</div>
+                    <div class="project-tech">Công nghệ & Công cụ: PostgreSQL, Python, Pandas, NumPy, Docker, Connection Pooling</div>
                     <ul class="project-bullets">
                         <li>Xây dựng hệ thống tiếp nhận và xử lý hơn 10 triệu bản ghi telemetry và log sự kiện hoạt động mỗi ngày dựa trên kiến trúc hướng sự kiện (event-driven), duy trì thời gian hoạt động ổn định của hệ thống đạt 99.97%.</li>
-                        <li>Tối ưu hóa 45% độ trễ truy vấn đọc-ghi đối với dữ liệu log tần suất cao trên PostgreSQL thông qua phân vùng bảng (table partitioning), lập chỉ mục hỗn hợp (composite indexing) và tối ưu hóa câu lệnh truy vấn.</li>
+                        <li>Tối ưu hóa 45% độ trễ truy vấn đọc-ghi đối với dữ liệu log tần suất cao trên PostgreSQL thông qua phân vùng bảng (table partitioning), lập chỉ ứng hỗn hợp (composite indexing) và tối ưu hóa câu lệnh truy vấn.</li>
                         <li><strong>[Data Insight]</strong> Đánh giá log truy cập phát hiện 70% tải máy chủ API tập trung vào các đợt cao điểm 15 phút giữa các ca học; đề xuất giải pháp cấp phát kết nối (connection pooling) tự động giúp giải quyết triệt để tình trạng nghẽn hàng đợi kết nối.</li>
                         <li>Mô hình hóa chỉ số hoạt động đồng thời (CCU) và biểu đồ giữ chân (retention curve) của hơn 15,000 người dùng hoạt động đồng thời để đưa ra các đề xuất nâng cấp tài nguyên hệ thống dựa trên số liệu thực tế.</li>
                     </ul>

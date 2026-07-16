@@ -195,7 +195,7 @@
             display: flex;
             flex-direction: column;
             gap: 3px;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .project-header {
@@ -226,6 +226,15 @@
             color: var(--text-muted);
             font-size: 10.5px;
             margin-bottom: 1px;
+        }
+
+        .project-tech {
+            font-size: 10px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
         }
 
         .project-bullets {
@@ -465,6 +474,7 @@
                         <a class="project-link" href="https://smartsale.io.vn/" target="_blank">Live: smartsale.io.vn 🔗</a>
                     </div>
                     <div class="project-desc">Live commercial platform analyzing sales trends, inventory turnover, and commercial metrics</div>
+                    <div class="project-tech">Tools & Technologies: Python, Pandas, Power BI, Excel, Safety Stock & ROP Models</div>
                     <ul class="project-bullets">
                         <li>Deployed a live commercial platform (https://smartsale.io.vn/) and engineered data models to calculate Customer Lifetime Value (LTV), Average Order Value (AOV), and overall revenue growth trends.</li>
                         <li>Modeled supply chain demand dynamics utilizing Safety Stock and Reorder Point (ROP) algorithms, optimizing warehouse replenishment cycles and decreasing out-of-stock anomalies by 18%.</li>
@@ -479,6 +489,7 @@
                         <a class="project-link" href="https://github.com/kieuwangtruong/KenFood" target="_blank">GitHub: KenFood 🔗</a>
                     </div>
                     <div class="project-desc">High-concurrency food delivery platform featuring a batch delivery engine and wallet billing ledger</div>
+                    <div class="project-tech">Tools & Technologies: Python, FastAPI, PostgreSQL, SQLAlchemy, PayOS SDK, Git, Pytest</div>
                     <ul class="project-bullets">
                         <li>Architected a robust transactional database schema featuring Row-Level Locking in PostgreSQL, securing 100% ACID compliance and preventing race conditions during peak lunch hour spikes.</li>
                         <li>Engineered an automated batch-processing pipeline executing a strict "10:01 AM Cutoff" balance settlement logic, reducing computational latency of heavy transaction settlements by 40%.</li>
@@ -493,11 +504,12 @@
                         <span class="project-link" style="color: var(--text-muted); cursor: default;">System telemetry project</span>
                     </div>
                     <div class="project-desc">Telemetry framework monitoring campus smart-facility access logs and user activities</div>
+                    <div class="project-tech">Tools & Technologies: PostgreSQL, Python, Pandas, NumPy, Docker, Connection Pooling</div>
                     <ul class="project-bullets">
                         <li>Built an event-driven telemetry ingestion engine processing 10M+ daily events and performance logs, maintaining a robust pipeline availability of 99.97% uptime.</li>
                         <li>Accelerated query execution speeds for high-volume logs by 45% using PostgreSQL table partitioning, composite indexing, and database query plan optimization.</li>
                         <li><strong>[Data Insight]</strong> Analyzed user access logs to discover that 70% of API server load occurred in tight 15-minute bursts between classes; utilized these findings to implement automated database connection pooling, preventing server timeouts.</li>
-                        <li>Modeled concurrent user behaviors and cohort retention curves for 15,000+ simulated active users, translating system logs into data-backed hardware capacity recommendations.</li>
+                        <li>Modelled concurrent user behaviors and cohort retention curves for 15,000+ simulated active users, translating system logs into data-backed hardware capacity recommendations.</li>
                     </ul>
                 </div>
             </div>
