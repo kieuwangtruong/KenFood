@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Kieu Quang Truong - Game Data Analyst Intern</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
+
         :root {
             --primary: #0f5d3e;
             --primary-light: #e8f5e9;
@@ -27,8 +28,8 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: #cbd5e1;
             color: var(--text-dark);
-            line-height: 1.4;
-            font-size: 12px;
+            line-height: 1.35;
+            font-size: 11.5px;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
@@ -49,30 +50,30 @@
             width: 32%;
             background-color: var(--sidebar-bg);
             border-right: 1px solid var(--border);
-            padding: 24px 20px;
+            padding: 24px 18px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
         }
 
         /* Main Content Styling */
         .main-content {
             width: 68%;
-            padding: 24px 24px 24px 24px;
+            padding: 24px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
         }
 
         /* Headers & Typography */
         .profile-container {
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 12px;
-            margin-bottom: 4px;
+            padding-bottom: 10px;
+            margin-bottom: 2px;
         }
 
         .candidate-name {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 800;
             color: var(--primary);
             letter-spacing: -0.5px;
@@ -81,7 +82,7 @@
         }
 
         .target-role {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 600;
             color: var(--text-muted);
             margin-top: 4px;
@@ -90,14 +91,14 @@
         }
 
         .section-title {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             border-bottom: 1.5px solid var(--primary);
-            padding-bottom: 4px;
-            margin-bottom: 10px;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -108,24 +109,25 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 6px;
         }
 
         .contact-item {
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 1px;
             font-size: 11px;
         }
 
         .contact-label {
             font-weight: 600;
             color: var(--text-muted);
-            font-size: 10px;
+            font-size: 9.5px;
             text-transform: uppercase;
         }
 
-        .contact-value, .contact-value a {
+        .contact-value,
+        .contact-value a {
             color: var(--text-dark);
             text-decoration: none;
             word-break: break-all;
@@ -141,12 +143,12 @@
         .skills-group {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 6px;
         }
 
         .skill-category-title {
             font-weight: 600;
-            font-size: 11px;
+            font-size: 10.5px;
             color: var(--text-dark);
         }
 
@@ -160,8 +162,8 @@
             background-color: var(--primary-light);
             color: var(--primary);
             font-weight: 600;
-            font-size: 10px;
-            padding: 3px 8px;
+            font-size: 9.5px;
+            padding: 2px 6px;
             border-radius: 4px;
             border: 1px solid rgba(15, 93, 62, 0.15);
         }
@@ -171,13 +173,13 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 4px;
         }
 
         .list-bullet li {
             position: relative;
-            padding-left: 12px;
-            font-size: 11px;
+            padding-left: 10px;
+            font-size: 10.5px;
         }
 
         .list-bullet li::before {
@@ -192,12 +194,8 @@
         .project-entry {
             display: flex;
             flex-direction: column;
-            gap: 4px;
-            margin-bottom: 8px;
-        }
-
-        .project-entry:last-child {
-            margin-bottom: 0;
+            gap: 3px;
+            margin-bottom: 4px;
         }
 
         .project-header {
@@ -207,13 +205,13 @@
         }
 
         .project-title {
-            font-size: 12.5px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--text-dark);
         }
 
         .project-link {
-            font-size: 10.5px;
+            font-size: 10px;
             font-weight: 500;
             color: var(--primary);
             text-decoration: none;
@@ -226,21 +224,21 @@
         .project-desc {
             font-style: italic;
             color: var(--text-muted);
-            font-size: 11px;
-            margin-bottom: 2px;
+            font-size: 10.5px;
+            margin-bottom: 1px;
         }
 
         .project-bullets {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 3px;
         }
 
         .project-bullets li {
             position: relative;
-            padding-left: 12px;
-            font-size: 11px;
+            padding-left: 10px;
+            font-size: 10.5px;
             color: var(--text-dark);
             text-align: justify;
         }
@@ -250,8 +248,8 @@
             color: var(--primary);
             position: absolute;
             left: 0;
-            top: 1px;
-            font-size: 8px;
+            top: 2px;
+            font-size: 7px;
         }
 
         /* Education & Certs Styling */
@@ -259,20 +257,50 @@
             display: flex;
             flex-direction: column;
             gap: 2px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .edu-header {
             display: flex;
             justify-content: space-between;
             font-weight: 700;
-            font-size: 11.5px;
+            font-size: 11px;
         }
 
         .edu-degree {
             font-weight: 500;
             color: var(--text-muted);
-            font-size: 11px;
+            font-size: 10.5px;
+        }
+
+        /* Float Button Styling */
+        .floating-btn-container {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 9999;
+        }
+
+        .btn-export {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-export:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+            background-color: #0b452e;
         }
 
         /* Print Media Query */
@@ -280,16 +308,33 @@
             body {
                 background: none;
             }
+
             .a4-page {
                 margin: 0;
                 box-shadow: none;
                 width: 210mm;
                 height: 297mm;
             }
+
+            .no-print {
+                display: none !important;
+            }
         }
     </style>
 </head>
+
 <body>
+
+    <!-- Floating Action Button for PDF Export -->
+    <div class="floating-btn-container no-print">
+        <button class="btn-export" onclick="window.print()">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download CV / Print PDF
+        </button>
+    </div>
 
     <div class="a4-page">
         <!-- LEFT SIDEBAR -->
@@ -300,11 +345,11 @@
                 <ul class="contact-list">
                     <li class="contact-item">
                         <span class="contact-label">Email</span>
-                        <span class="contact-value"><a href="mailto:kieuquangtruong.da@gmail.com">kieuquangtruong.da@gmail.com</a></span>
+                        <span class="contact-value"><a href="mailto:kieuquangtruong2005tn@gmail.com">kieuquangtruong2005tn@gmail.com</a></span>
                     </li>
                     <li class="contact-item">
                         <span class="contact-label">Phone</span>
-                        <span class="contact-value">+84 (0) 987 654 321</span> <!-- Replace placeholder with real number if needed -->
+                        <span class="contact-value">+84 (0) 347 490 811</span>
                     </li>
                     <li class="contact-item">
                         <span class="contact-label">Location</span>
@@ -327,10 +372,10 @@
                 <div class="edu-entry">
                     <div class="edu-header">
                         <span>Dai Nam University</span>
-                        <span style="font-weight: 500; font-size: 10px;">Hanoi, VN</span>
+                        <span style="font-weight: 500; font-size: 9.5px;">Hanoi, VN</span>
                     </div>
                     <div class="edu-degree">B.S. in Information Technology</div>
-                    <div style="font-size: 10.5px; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
+                    <div style="font-size: 10px; color: var(--text-muted); font-weight: 500; margin-top: 1px;">
                         GPA: 3.2 / 4.0 | Grad: Dec 2027
                     </div>
                 </div>
@@ -349,7 +394,7 @@
                         <span class="skill-tag">Table Partitioning</span>
                     </div>
                 </div>
-                <div class="skills-group" style="margin-top: 10px;">
+                <div class="skills-group" style="margin-top: 8px;">
                     <div class="skill-category-title">Analytics & Tools:</div>
                     <div class="skills-container">
                         <span class="skill-tag">Python (Pandas/NumPy)</span>
@@ -359,7 +404,7 @@
                         <span class="skill-tag">LTV/AOV Metrics</span>
                     </div>
                 </div>
-                <div class="skills-group" style="margin-top: 10px;">
+                <div class="skills-group" style="margin-top: 8px;">
                     <div class="skill-category-title">DevOps & Systems:</div>
                     <div class="skills-container">
                         <span class="skill-tag">Data Pipelines</span>
@@ -387,7 +432,7 @@
                 <ul class="list-bullet">
                     <li><strong>Vietnamese</strong> (Native)</li>
                     <li><strong>English</strong> (TOEIC 650)</li>
-                    <li style="list-style: none; font-size: 10px; color: var(--text-muted); padding-left: 12px; margin-top: -2px;">
+                    <li style="list-style: none; font-size: 9.5px; color: var(--text-muted); padding-left: 10px; margin-top: -1px;">
                         Proficient in technical docs & foreign databases.
                     </li>
                 </ul>
@@ -405,7 +450,7 @@
             <!-- CAREER OBJECTIVE -->
             <div>
                 <div class="section-title">Career Objective</div>
-                <p style="text-align: justify; font-size: 11.5px; color: var(--text-dark);">
+                <p style="text-align: justify; font-size: 11px; color: var(--text-dark);">
                     Aspiring Game Data Analyst Intern with solid IT foundations and hands-on experience engineering database engines and telemetry pipelines. Eager to leverage skills in SQL querying, Python scripting, and log analytics at top mobile game studios. Passionate about transforming raw player telemetry, session events, and virtual transaction logs into actionable insights to optimize player retention, improve game economy balancing, and elevate monetization metrics.
                 </p>
             </div>
@@ -413,7 +458,7 @@
             <!-- PROJECTS -->
             <div>
                 <div class="section-title">Data & System Projects</div>
-                
+
                 <div class="project-entry">
                     <div class="project-header">
                         <span class="project-title">SmartSale | Game Economy & Business Intelligence Analytics</span>
@@ -423,11 +468,12 @@
                     <ul class="project-bullets">
                         <li>Engineered real-time data models simulating virtual economy loops, calculating critical gaming commercial metrics including Customer Lifetime Value (LTV), Average Order Value (AOV), and overall virtual currency velocity.</li>
                         <li>Modeled supply chain demand dynamics utilizing Safety Stock and Reorder Point (ROP) algorithms, optimizing item distribution and decreasing out-of-stock anomalies by 18%.</li>
+                        <li><strong>[Data Insight]</strong> Segmented virtual items by demand elasticity; identified high-margin rare collectibles and recommended a 12% pricing premium, leading to a 7.4% simulated revenue increase without sacrificing unit transaction volume.</li>
                         <li>Designed dynamic Power BI dashboards to track item sales trends, while establishing a robust validation script for automated Excel ingestions to maintain clean operational event logs.</li>
                     </ul>
                 </div>
 
-                <div class="project-entry" style="margin-top: 12px;">
+                <div class="project-entry" style="margin-top: 10px;">
                     <div class="project-header">
                         <span class="project-title">KenFood Platform | Real-time Transactions & Concurrency Ledger</span>
                         <a class="project-link" href="https://github.com/kieuwangtruong/KenFood" target="_blank">GitHub: KenFood 🔗</a>
@@ -436,11 +482,12 @@
                     <ul class="project-bullets">
                         <li>Architected a robust transactional database schema featuring Row-Level Locking in PostgreSQL, securing 100% ACID compliance and preventing race conditions during simulated high-concurrency event surges.</li>
                         <li>Engineered an automated batch-processing pipeline executing a strict "10:01 AM Cutoff" balance settlement logic, reducing computational latency of heavy transaction settlements by 40%.</li>
+                        <li><strong>[Data Insight]</strong> Analyzed log latency data to detect a 14% transaction drop-off during checkout bottleneck hours; utilized these metrics to justify the deployment of Row-Level Locking, recovering aborted checkouts.</li>
                         <li>Programmed custom transactional auditing checks directly in the storage engine, automatically flagging balance anomalies with 98.6% accuracy.</li>
                     </ul>
                 </div>
 
-                <div class="project-entry" style="margin-top: 12px;">
+                <div class="project-entry" style="margin-top: 10px;">
                     <div class="project-header">
                         <span class="project-title">Smart Campus | Big Data Telemetry & Player-like Behavior Analytics</span>
                         <span class="project-link" style="color: var(--text-muted); cursor: default;">System telemetry project</span>
@@ -449,6 +496,7 @@
                     <ul class="project-bullets">
                         <li>Built an event-driven telemetry ingestion engine processing 10M+ daily events and performance logs, maintaining a robust pipeline availability of 99.97% uptime.</li>
                         <li>Accelerated query execution speeds for high-volume logs by 45% using PostgreSQL table partitioning, composite indexing, and database query plan optimization.</li>
+                        <li><strong>[Data Insight]</strong> Evaluated behavior patterns to discover that simulated user traffic spikes by 3.2x during midday slots (11 AM - 1 PM), utilizing this trend to deploy automated database connection pooling and prevent system timeout bottlenecks.</li>
                         <li>Modeled concurrent user behaviors and cohort retention curves for 15,000+ simulated active users, translating system logs into data-backed hardware capacity recommendations.</li>
                     </ul>
                 </div>
@@ -457,4 +505,5 @@
     </div>
 
 </body>
+
 </html>
